@@ -15,7 +15,7 @@ jobs:
       with:
         node-version: 12.x
 
-    - name: Initializing Surge and Deploying
+    - name: Initializing Surge and Deploying !
       run: npm install --global surge
     - run: echo "==>> ${{ secrets.SUPER_SECRET_SURGE_TOKEN }}"
     - run: surge ./ BootCamp2020_UmarGit.surge.sh --token ${{ secrets.SUPER_SECRET_SURGE_TOKEN }}
